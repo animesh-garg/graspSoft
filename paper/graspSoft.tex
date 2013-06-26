@@ -1,0 +1,128 @@
+% Author: Animesh Garg
+% Date: June 20, 2013
+%This document uses the template from ICRA 2013 website. 
+
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out if you need a4paper
+%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4 paper
+
+\IEEEoverridecommandlockouts                              % This command is only needed if 
+                                                          % you want to use the \thanks command
+\overrideIEEEmargins                                      % Needed to meet printer requirements.
+
+
+\usepackage{graphics} % for pdf, bitmapped graphics files
+\usepackage{epsfig} % for postscript graphics files
+%\usepackage{mathptmx} % assumes new font selection scheme installed
+\usepackage{times} % assumes new font selection scheme installed
+\usepackage{amsmath} % assumes amsmath package installed
+\usepackage{amssymb}  % assumes amsmath package installed
+
+%USER DEFINED PACKAGES
+%USER DEFINED PACKAGES
+%\usepackage{amsthm}
+
+\usepackage{mathtools}
+\usepackage{amsfonts}
+%\usepackage{algorithmic}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{extramarks}
+\usepackage{chngpage}
+\usepackage{soul}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{graphicx,float,wrapfig}
+\usepackage{ifthen}
+\usepackage{listings}
+\usepackage{courier}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+%\usepackage{cite}
+
+% numbers option provides compact numerical references in the text. 
+%\usepackage[numbers]{natbib}
+\usepackage{multicol}
+\usepackage[bookmarks=true]{hyperref}
+
+
+%USER DEFINED MACROS
+% TODO
+\newcommand{\todo}[1]{{ \color{red} {[todo:#1]}}}
+
+%Author Comments
+\newcommand{\ken}[1]{{ \color{blue} {[Ken: #1]}}}
+\newcommand{\AG}[1]{{ \color{cyan} {[AG: #1]}}}
+\newcommand{\SP}[1]{{ \color{magenta} {[SP: #1]}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TITLE
+\title{\LARGE \bf
+Designing Minimum Discomfort Medical Fixtures \\
+using Submodular Coverage Algorithms 
+%Exploiting Submodular Grasping for Custom Designed Patient Positioning Systems to improve Radiation Therapy
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%AUTHOR LIST
+\author{Animesh Garg$^{1}$, Sachin Patil$^{2}$, Ken Goldberg$^{1,2}$% <-this % stops a space
+\thanks{*This work is supported by Some Grant}% <-this % stops a space
+\thanks{$^{1}$Department of IEOR, UC Berkeley,
+	Berkeley, CA 94720, USA}%
+\thanks{$^{2}$Department of EECS, UC Berkeley,
+        Berkeley, CA 94720, USA}%
+\thanks{{\tt\small \{animesh.garg, sachinpatil, goldberg\} @berkeley.edu}}%
+}
+
+
+\begin{document}
+
+%Keep these as it is, they are from the ICRA template.
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+to be finalized!
+\end{abstract}
+
+\noindent \textit{ Keywords -- submodular grapsing, patient positioning, external beam radiation therapy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{1-introduction}
+\input{2-relatedWork}
+%\input{3-problemStatement}
+%\input{4-algorithm}
+%\input{5-experiments}
+%\input{6-results}
+%\input{7-discussion}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{CONCLUSION}
+%Conclusion goes here.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Keep this here for better formatting. 
+\addtolength{\textheight}{-12cm}  
+ % This command serves to balance the column lengths
+% on the last page of the document manually. It shortens
+% the textheight of the last page by a suitable amount.
+% This command does not take effect until the next page
+% so it should come on the page before the last. Make
+% sure that you do not shorten the textheight too much.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\input{8-appendix}
+%
+%\section*{ACKNOWLEDGMENT}
+%This is to thank people for their valuable support. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%References
+\bibliographystyle{IEEEtranS}
+\bibliography{graspSoft}
+
+
+
+\end{document}
