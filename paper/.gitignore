@@ -1,0 +1,9 @@
+#tex auxilliary files
+*.log
+*.bak
+*.bbl
+*.aux
+*.blg
+*.synctex.gz
+*.out
+
