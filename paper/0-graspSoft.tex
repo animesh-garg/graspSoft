@@ -1,6 +1,6 @@
 % Author: Animesh Garg
 % Date: June 20, 2013
-%This document uses the template from ICRA 2013 website. 
+%This document has slightly modified the template from ICRA 2013 website. 
 
 \documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out if you need a4paper
 %\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4 paper
@@ -8,7 +8,6 @@
 \IEEEoverridecommandlockouts                              % This command is only needed if 
                                                           % you want to use the \thanks command
 \overrideIEEEmargins                                      % Needed to meet printer requirements.
-
 
 \usepackage{graphics} % for pdf, bitmapped graphics files
 \usepackage{epsfig} % for postscript graphics files
@@ -18,12 +17,9 @@
 \usepackage{amssymb}  % assumes amsmath package installed
 
 %USER DEFINED PACKAGES
-%USER DEFINED PACKAGES
-%\usepackage{amsthm}
-
 \usepackage{mathtools}
 \usepackage{amsfonts}
-%\usepackage{algorithmic}
+\usepackage{algorithmic}
 \usepackage{setspace}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
@@ -37,13 +33,20 @@
 \usepackage{courier}
 \usepackage{graphicx}
 \usepackage{epstopdf}
+
+%Do not use both cite and natbib together
 %\usepackage{cite}
 
+% the next three lines allow natbib to be used with ieeeconf document style
+\makeatletter
+\let\NAT@parse\undefined
+\makeatother
+
 % numbers option provides compact numerical references in the text. 
-%\usepackage[numbers]{natbib}
+\usepackage[sort&compress,numbers]{natbib}
+
 \usepackage{multicol}
 \usepackage[bookmarks=true]{hyperref}
-
 
 %USER DEFINED MACROS
 % TODO
@@ -59,13 +62,14 @@
 \title{\LARGE \bf
 Designing Minimum Discomfort Medical Fixtures \\
 using Submodular Coverage Algorithms 
-%Exploiting Submodular Grasping for Custom Designed Patient Positioning Systems to improve Radiation Therapy
+%Exploiting Submodular Grasping for Custom Designed Patient Positioning Systems 
+%to improve Radiation Therapy
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %AUTHOR LIST
 \author{Animesh Garg$^{1}$, Sachin Patil$^{2}$, Ken Goldberg$^{1,2}$% <-this % stops a space
-\thanks{*This work is supported by Some Grant}% <-this % stops a space
+\thanks{*This work is supported by a grant}% <-this % stops a space
 \thanks{$^{1}$Department of IEOR, UC Berkeley,
 	Berkeley, CA 94720, USA}%
 \thanks{$^{2}$Department of EECS, UC Berkeley,
@@ -87,20 +91,21 @@ using Submodular Coverage Algorithms
 to be finalized!
 \end{abstract}
 
-\noindent \textit{ Keywords -- submodular grapsing, patient positioning, external beam radiation therapy}
+\noindent \textit{ Keywords -- submodular grapsing, patient positioning, 
+external beam radiation therapy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{1-introduction}
 \input{2-relatedWork}
-%\input{3-problemStatement}
-%\input{4-algorithm}
-%\input{5-experiments}
-%\input{6-results}
-%\input{7-discussion}
+\input{3-problemStatement}
+\input{4-algorithm}
+\input{5-experiments}
+\input{6-results}
+\input{7-discussion}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{CONCLUSION}
-%Conclusion goes here.
+%Conclusion goes here.abbrvnat.bst
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Keep this here for better formatting. 
@@ -120,9 +125,8 @@ to be finalized!
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %References
-\bibliographystyle{IEEEtranS}
+%\bibliographystyle{IEEEtranS}
+\bibliographystyle{ieeetr} %for use with natbib
 \bibliography{graspSoft}
-
-
 
 \end{document}
