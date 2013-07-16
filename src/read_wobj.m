@@ -54,7 +54,7 @@ if enable_mesh_cache & exist(cachepath)
         return;
     else
         delete(cachepath);
-        clear mesh;
+        clear S;
     end
 end
 

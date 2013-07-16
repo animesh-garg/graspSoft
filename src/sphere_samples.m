@@ -5,7 +5,7 @@ function pts_np = sphere_samples(n,p,mode)
 % Date: July 2013
 
 if (nargin < 3)
-    mode=0; %default mode 
+    mode=2; %default mode 
 end
 
 %
@@ -32,8 +32,9 @@ elseif mode == 1
 elseif mode ==2
     pts_np = randsphere(n,p);
 
+elseif mode ==3     
+    pts_np = randUnifSphere(n,p);  
 end
-
 
 end
 
@@ -60,3 +61,13 @@ end
 X = randn(m,n);
 s2 = sum(X.^2,2);
 X = X.*repmat(r*(gammainc(s2/2,n/2).^(1/n))./sqrt(s2),1,n);
+
+end
+
+function X = randUnifSphere(m,n)
+%returns m uniformly sampled points on a n-dimensional 
+%sphere
+X = zeros(0,m);
+
+
+end

@@ -2,5 +2,58 @@
 % Date: June 23, 2013
 
 \section{OUR APPROACH}
+\label{sec:Algorithm}
 
-This is dummy text.
+
+\subsection{Generate Candidate Contact points}
+\label{subSec:genContacts}
+As observed in the results section, naive uniform sampling of the mesh surface 
+for contact point candidates results in pathological contact points. Hence we 
+propose the following heuristic approach for generation of contact point 
+candidates:
+\begin{enumerate}
+\item Calculate density of vertices (or faces) around each vertex. 
+Alternatively, we can use the valency of each vertex (the number of faces it is 
+part of) for estimating the change in curvature in the neighborhood of a 
+vertex. 
+High density of faces implies complex surface. In case of a human head these 
+ would be facial areas like the lips, eyelids, nostrils and ears.
+
+\item Eliminate all candidate vertices (or faces in a mesh), where the normal 
+is facing in the mesh or intersects with the mesh in close vicinity. Example 
+the back of the ear results in normals pointing in the head. 
+
+\item Weight all vertices, after elimination, inversely proportional to their 
+neighborhood density. And now sample from this set. 
+
+\end{enumerate}
+
+We note that facial features in humans are comparatively on the higher side of 
+complexity. However the above heuristic would also work for less complex areas 
+like elbow and knee. 
+Also it is worth noting that noise wrenches would still be sampled uniformly from the mesh. This implies that the gravity can be in any direction or the person can try to move in any direction.
+
+\todo{formalize the contact point sampling}
+
+
+
+\subsection{Choice of Subset of contact points for Submodular Grasp Coverage}
+\todo{write algorithm for minimizing maximum wrench}
+
+\subsection{Create a 3D Model for Custom Fixture}
+\todo{tentative ideas}
+The resultant set of contact points $S_0$ chosen from the candidate set generated 
+from section~\ref{subSec:genContacts} would result in points being located far away. This is because each vertex is weighted inversely to number of vertices in its neighborhood.
+
+Hence the final subset $S_0$, would be sparsely located on the surface of the mesh. We propose the following method to construct a complete 3D model:
+\begin{enumerate}
+\item For every local triplet of points in $S_0$, find geodesic distance between all three pairs. 
+\item Locality can be established by all pairs geodesic distance. \todo{find a better way if exists}
+\item Connect the triplets along geodesics to create a surface on the mesh surface. 
+\item Invert the normals for this surface, and then add it to the list of objects in 3D fixture. 
+\item Repeat for all such neighboring triplets in $S_0$.
+\item Finally combine all elements in list of objects in 3D fixture into a single mesh. 
+\end{enumerate}
+
+The final mesh would conform to the surface. 
+\todo{Conjecture:}Since each point in the set $S_0$ was chosen to be minimize maximum contact wrench. Hence distributing the same load (force-torque pair) in the area contact, compared to three neighboring points only, would only reduce the maximum contact wrench. Hence the new solution is better than the one with only point contact.

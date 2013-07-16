@@ -7,6 +7,8 @@
 % in hull case
 % use saturate
 
+pathtoVTK = pwd;
+addpath(genpath([pathtoVTK(1:end-3) filesep 'matVTK1.0']));
 %%
 % [faces_f3,verts_v3,labels_v] = load_cube;
 %wobj = read_wobj('~/Data/grasping/obj/m288.obj')
