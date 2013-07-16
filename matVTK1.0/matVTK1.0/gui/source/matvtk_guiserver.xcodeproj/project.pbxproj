@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02BDFC0A80A42032353E0FA3 /* vtkGenericFiltering in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 86417E5FF71B9057B535C863 /* vtkGenericFiltering */; };
+		05E81B6DF781B855CD8BB563 /* vtkInfovis in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 52A8271A01E1420BE455C176 /* vtkInfovis */; };
+		069D05B0128AE5DC7EE31738 /* QtCore.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */; };
+		0C57673A7A49D74B8D33B419 /* moc_ConfigDialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4CBD3F5B68E3EF30FB8AAFE4 /* moc_ConfigDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		0C6D4628EE0B0D1479A20551 /* AGL.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = C6766F86E49E9C8701C8E637 /* AGL.framework */; };
+		0F517CA915F6FB55D03C5FA9 /* InteractiveCommand.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3628E4F77BC8CB6B59E866B0 /* InteractiveCommand.cpp */; settings = {ATTRIBUTES = (); }; };
+		17EB440F1F98E9002175F465 /* vtkGeovis in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = EDE6F9B3ABE7069D23E03F35 /* vtkGeovis */; };
+		1B3863E72F8773655530E374 /* matvtk.icns in Bundle Resources */ = {isa = PBXBuildFile; fileRef = 215905D27DB9D5EC4E6AB0D1 /* matvtk.icns */; settings = {ATTRIBUTES = (); }; };
+		22B8CDFB4D1E6DFD5BF2B12A /* vtkjpeg in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 72126069D8FAFAEBCD12D980 /* vtkjpeg */; };
+		22D757D803869DFA8ED348BC /* CommandReader.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = EDE47913DFD753E74674F205 /* CommandReader.cpp */; settings = {ATTRIBUTES = (); }; };
+		2507A5918F2A2A45B2E405C9 /* moc_ConfigurationValue.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FFFC3D86CB3A7B1DB05C0ADC /* moc_ConfigurationValue.cpp */; settings = {ATTRIBUTES = (); }; };
+		2B093CA6F071B023A473CED0 /* main.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 118FCBAABA162BA17933C789 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		2E56060892B6BE8BBEF549AF /* SceneRegistry.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6A971BC6374785A95C190BD2 /* SceneRegistry.cpp */; settings = {ATTRIBUTES = (); }; };
+		2F5465C1926FF89028244D21 /* vtkCharts in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = D244C2917AD749133CAA2E65 /* vtkCharts */; };
+		35E3C5B4668E2FCE24F3DCC3 /* PropertyEntry.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 46326E6B7275CAFA383022FB /* PropertyEntry.cpp */; settings = {ATTRIBUTES = (); }; };
+		3826A0833FCB54E86728C6EF /* QtNetwork.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = B6B9970B86A6C219B0869FE9 /* QtNetwork.framework */; };
+		3C91541A9309FFDA97952FDB /* vtkFiltering in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 2E019EEFFBE38ADAE7BBA6AA /* vtkFiltering */; };
+		4136482B2B69BA946160CEFA /* moc_InteractiveCommand.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9D986A476FCD9B6DF6343EB6 /* moc_InteractiveCommand.cpp */; settings = {ATTRIBUTES = (); }; };
+		43C9DF745227168B45F85A51 /* moc_SceneWindow.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 2309E3CC26ED1138EC3538EC /* moc_SceneWindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		4A3BAB31F07F6E0A92613E9E /* GuiServer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 5F07F5C19F85DA1B2D375062 /* GuiServer.cpp */; settings = {ATTRIBUTES = (); }; };
+		4D1DDC4A1875F09EA9CDF8F6 /* moc_GuiServer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 741AF2BBEDF9191F53E0F58A /* moc_GuiServer.cpp */; settings = {ATTRIBUTES = (); }; };
+		4D63FB973676B0550B4A66A1 /* ArraySerializer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F2866FFA7A5ECC198CD3FB37 /* ArraySerializer.cpp */; settings = {ATTRIBUTES = (); }; };
+		4DB8B0721DB0608F8A21C695 /* CropCallback.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FA3677956C17767F5917971A /* CropCallback.cpp */; settings = {ATTRIBUTES = (); }; };
+		4E9B158973176716A3F0E0D9 /* vtkHybrid in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 4380C4C9EF433EF95D0B8E25 /* vtkHybrid */; };
+		501667F26B3C1FF6767A7C12 /* QtGui.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 9B36DA7E32F0304E780E7972 /* QtGui.framework */; };
+		50F56B8D6F254F720855DF1A /* vtkGraphics in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 94F6E07BD792FEAF76A78B81 /* vtkGraphics */; };
+		528AA8DA7DD15DDDFF497FF5 /* PlotComponent.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = D6749F4883A5F2C61EA02DF6 /* PlotComponent.cpp */; settings = {ATTRIBUTES = (); }; };
+		56254E36346E088624B36FA6 /* vtkzlib in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 16D47E16959C340DE85A66E6 /* vtkzlib */; };
+		581D6DD848CB3EB45D6E3080 /* vtkViews in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = A0A354118C24483980752674 /* vtkViews */; };
+		5CC2515612E70DF600072295 /* matvtk_guiserver.app in Project Copy */ = {isa = PBXBuildFile; fileRef = 5CC2515312E70DF600072295 /* matvtk_guiserver.app */; };
+		5EC177C46F46BA99B9F8B505 /* SpecialCommand.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 2D613B01D320A18747F7892F /* SpecialCommand.cpp */; settings = {ATTRIBUTES = (); }; };
+		5F6A5860F93B01CCC7F1D48A /* RegistryEntry.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 51AD7C87BC0587A53559885C /* RegistryEntry.cpp */; settings = {ATTRIBUTES = (); }; };
+		6759E1918F23B3CE1D39E345 /* MatvtkCommand.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 93D03B1CCD483C6A3335D282 /* MatvtkCommand.cpp */; settings = {ATTRIBUTES = (); }; };
+		6B463AE8A62CFBB43E6B93B2 /* ConnectionHandler.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4F834CF8B4DF1290D8C9CE35 /* ConnectionHandler.cpp */; settings = {ATTRIBUTES = (); }; };
+		6B9DF1E5C6F361BC383BB64F /* moc_MatvtkCommand.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9DDF68624E3415BCE853F648 /* moc_MatvtkCommand.cpp */; settings = {ATTRIBUTES = (); }; };
+		6C536010EEB4624BF26CF081 /* DataSerializer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9C56E1F3240A7B22576F645A /* DataSerializer.cpp */; settings = {ATTRIBUTES = (); }; };
+		6D57D68E4A46016A2A6ED7D4 /* moc_PlotComponent.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3764DD46D387C372ECC67C05 /* moc_PlotComponent.cpp */; settings = {ATTRIBUTES = (); }; };
+		6E7DF97B49CD5D1C5F1DC312 /* StringSerializer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6749AA91F2B009E31CF46DE5 /* StringSerializer.cpp */; settings = {ATTRIBUTES = (); }; };
+		6EA00F6743D0C73E4BF6D29A /* vtkexpat in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 7004830B620024217C2D3BC4 /* vtkexpat */; };
+		727B12EC083885099325A0AC /* vtkpng in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 7DD8F1D3DD2EF64503E9D96B /* vtkpng */; };
+		745B2036A4007E1243A3EBBB /* SceneWindow.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FBE1EB27E4D4EA2AE7713E55 /* SceneWindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		751F98E3A03FDB39D47E9CB4 /* StateMachine.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C764B909D73E398641E4A087 /* StateMachine.cpp */; settings = {ATTRIBUTES = (); }; };
+		77C663449ABEE93BEE5F2771 /* Cocoa.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 336CB11D929F5E35FA69020F /* Cocoa.framework */; };
+		7B752572FF37EA6163D9F35E /* StateDataPort.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FD43984B7B4F49F632DD6282 /* StateDataPort.cpp */; settings = {ATTRIBUTES = (); }; };
+		85FDBC82648782548EA36A7F /* vtkCommon in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = FDA8E599FF0836732AABEB09 /* vtkCommon */; };
+		8F1797275F3B9291AADC377A /* json in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 840EDBDB5E4243660F5164DC /* json */; };
+		92D0283DFA9507530DA4472C /* vtkfreetype in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 2BC8E084C0B9FC53D526CA85 /* vtkfreetype */; };
+		93A676CF90D9D3D90C6DB75D /* vtktiff in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 463A62D0E80642110E551927 /* vtktiff */; };
+		979E471CFE62023BF23BAE94 /* ConfigDialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 0EF897030BD31346B4A501A5 /* ConfigDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		98DEDAB3868F7BD132C09399 /* moc_SpecialCommand.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 51EF995B0919A50F33C6FC04 /* moc_SpecialCommand.cpp */; settings = {ATTRIBUTES = (); }; };
+		9D024A5BEB3F247985DF87F9 /* moc_SceneRegistry.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 60D585D01E5EF2BE2461B481 /* moc_SceneRegistry.cpp */; settings = {ATTRIBUTES = (); }; };
+		A05586CFAC65F72B58CFD360 /* qrc_matvtk.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 87FD73B42E20FE706C9A9388 /* qrc_matvtk.cpp */; settings = {ATTRIBUTES = (); }; };
+		A1991339E08E7EBA8E8C5B16 /* State.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = CB9F595A08521B6BF7761050 /* State.cpp */; settings = {ATTRIBUTES = (); }; };
+		A313854483C5790477A9235B /* vtklibxml2 in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 2D3F352717EED3D4015346D1 /* vtklibxml2 */; };
+		A67160AB5D13EC000B026397 /* PlotCommand.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 921C116AC006F6960886BCCF /* PlotCommand.cpp */; settings = {ATTRIBUTES = (); }; };
+		A79A555FA0CABAA9B5DC071D /* ConfigAdapter.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = A3F864144B0F3544730BDD88 /* ConfigAdapter.cpp */; settings = {ATTRIBUTES = (); }; };
+		A8C61295597F5704A3FF061F /* VtkDataSerializer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 65590A5F850BCD55ABF46C1A /* VtkDataSerializer.cpp */; settings = {ATTRIBUTES = (); }; };
+		BCEF71E1EDFB18DA77DC750B /* OpenGL.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = DA18A6831232F53228631AD1 /* OpenGL.framework */; };
+		BFAB58CF3F255BA3C65330C6 /* ConfigurationValue.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4500E1378AE6AA50AAD3EFDA /* ConfigurationValue.cpp */; settings = {ATTRIBUTES = (); }; };
+		C5A6A4F494F67D3D4CB0A29B /* QVTK in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = F7CDE4F4D6A9A0C11919CF2A /* QVTK */; };
+		C5C5ABF2ED84F016816BF3C7 /* vtkftgl in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = FB0B68BB66B5CB4EE8B7D611 /* vtkftgl */; };
+		C8007C21322514F41B679C25 /* DataPort.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E3D5A1DBD291A7B010EEE92F /* DataPort.cpp */; settings = {ATTRIBUTES = (); }; };
+		C974A535216E2D0D554C8B34 /* vtkWidgets in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 62973168FD7823531570F9E9 /* vtkWidgets */; };
+		D486344367CEDB3309090EBD /* SceneConfiguration.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 0EFB8234F8855581869D04A4 /* SceneConfiguration.cpp */; settings = {ATTRIBUTES = (); }; };
+		DE3EAAF0088A4BFD54B3EAEB /* matvtkProtocol.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FD363B6C43651919D253ECDE /* matvtkProtocol.cpp */; settings = {ATTRIBUTES = (); }; };
+		E39C185FB51B0C2060C34C26 /* StringTable.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = ED6E4AFA9B64371AEB6BB481 /* StringTable.cpp */; settings = {ATTRIBUTES = (); }; };
+		E64DC9769E26F1FFDD319F04 /* vtksys in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 7E3EC0A507456AEB3DB2FB7C /* vtksys */; };
+		E64E3F6EC492C17C94091B6C /* moc_ConnectionHandler.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E80B6B6558AE5A053C0C0569 /* moc_ConnectionHandler.cpp */; settings = {ATTRIBUTES = (); }; };
+		E6F45831CEBC8170868CF2D9 /* vtkVolumeRendering in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = E642ED334C622F8771F9A8C1 /* vtkVolumeRendering */; };
+		E8B9F0C58A5A7125FD5B79D3 /* IOKit.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = B41DB44ED1FE16D3A80D5696 /* IOKit.framework */; };
+		EE6D60402D285759DB866CF4 /* MatvtkCommandFactory.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = D80BB726C016EDB35AF0C708 /* MatvtkCommandFactory.cpp */; settings = {ATTRIBUTES = (); }; };
+		F5A8132408C87D0851B2D0B5 /* vtkRendering in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 749CC668EF63DB1ADF6F76D1 /* vtkRendering */; };
+		F6B82C1F85E6C6601470DC72 /* vtkImaging in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 1E55A5C4AB5A824AA581ED45 /* vtkImaging */; };
+		FA94544FC0627932852025EB /* NetworkDataPort.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FC3255AB7C93A7FCDDFA7483 /* NetworkDataPort.cpp */; settings = {ATTRIBUTES = (); }; };
+		FC9CD8B21D05C2613A2723AC /* vtkIO in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 5887B574DB682C2B784E9C38 /* vtkIO */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Users/ebirn/Documents/projects/ikuchi/guiServer;
+			dstSubfolderSpec = 0;
+			files = (
+				5CC2515612E70DF600072295 /* matvtk_guiserver.app in Project Copy */,
+			);
+			name = "Project Copy";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0EF897030BD31346B4A501A5 /* ConfigDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigDialog.cpp; sourceTree = "<group>"; };
+		0EFB8234F8855581869D04A4 /* SceneConfiguration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneConfiguration.cpp; sourceTree = "<group>"; };
+		118FCBAABA162BA17933C789 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		16D47E16959C340DE85A66E6 /* vtkzlib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkzlib; path = "/usr/local/lib/vtk-5.6/libvtkzlib.a"; sourceTree = "<absolute>"; };
+		1E55A5C4AB5A824AA581ED45 /* vtkImaging */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkImaging; path = "/usr/local/lib/vtk-5.6/libvtkImaging.a"; sourceTree = "<absolute>"; };
+		215905D27DB9D5EC4E6AB0D1 /* matvtk.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = matvtk.icns; sourceTree = "<group>"; };
+		2198A5BA978562BF5D90D60E /* GuiServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuiServer.h; sourceTree = "<group>"; };
+		2309E3CC26ED1138EC3538EC /* moc_SceneWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_SceneWindow.cpp; sourceTree = "<group>"; };
+		24C88AA5EA96ED577D5B4516 /* PlotCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlotCommand.h; sourceTree = "<group>"; };
+		24CFBEA13944697BA0C09B4E /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		2B4A9935830B0B51B0247ACC /* NetworkDataPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkDataPort.h; sourceTree = "<group>"; };
+		2BC8E084C0B9FC53D526CA85 /* vtkfreetype */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkfreetype; path = "/usr/local/lib/vtk-5.6/libvtkfreetype.a"; sourceTree = "<absolute>"; };
+		2D3F352717EED3D4015346D1 /* vtklibxml2 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtklibxml2; path = "/usr/local/lib/vtk-5.6/libvtklibxml2.a"; sourceTree = "<absolute>"; };
+		2D613B01D320A18747F7892F /* SpecialCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpecialCommand.cpp; sourceTree = "<group>"; };
+		2E019EEFFBE38ADAE7BBA6AA /* vtkFiltering */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkFiltering; path = "/usr/local/lib/vtk-5.6/libvtkFiltering.a"; sourceTree = "<absolute>"; };
+		336CB11D929F5E35FA69020F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		3628E4F77BC8CB6B59E866B0 /* InteractiveCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InteractiveCommand.cpp; sourceTree = "<group>"; };
+		3764DD46D387C372ECC67C05 /* moc_PlotComponent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_PlotComponent.cpp; sourceTree = "<group>"; };
+		3854B472D4C121ED0831778B /* VtkDataSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VtkDataSerializer.h; sourceTree = "<group>"; };
+		3DA62B5C1BC6E4E8DAE8B622 /* CropCallback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CropCallback.h; sourceTree = "<group>"; };
+		3DB73F95043DAC0D8CBD845C /* SpecialCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecialCommand.h; sourceTree = "<group>"; };
+		3F64D487908933BCE0AC333B /* ConfigAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigAdapter.h; sourceTree = "<group>"; };
+		4380C4C9EF433EF95D0B8E25 /* vtkHybrid */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkHybrid; path = "/usr/local/lib/vtk-5.6/libvtkHybrid.a"; sourceTree = "<absolute>"; };
+		4500E1378AE6AA50AAD3EFDA /* ConfigurationValue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigurationValue.cpp; sourceTree = "<group>"; };
+		46326E6B7275CAFA383022FB /* PropertyEntry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PropertyEntry.cpp; sourceTree = "<group>"; };
+		463A62D0E80642110E551927 /* vtktiff */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtktiff; path = "/usr/local/lib/vtk-5.6/libvtktiff.a"; sourceTree = "<absolute>"; };
+		4CBD3F5B68E3EF30FB8AAFE4 /* moc_ConfigDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_ConfigDialog.cpp; sourceTree = "<group>"; };
+		4F834CF8B4DF1290D8C9CE35 /* ConnectionHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionHandler.cpp; sourceTree = "<group>"; };
+		51AD7C87BC0587A53559885C /* RegistryEntry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RegistryEntry.cpp; sourceTree = "<group>"; };
+		51EF995B0919A50F33C6FC04 /* moc_SpecialCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_SpecialCommand.cpp; sourceTree = "<group>"; };
+		52A8271A01E1420BE455C176 /* vtkInfovis */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkInfovis; path = "/usr/local/lib/vtk-5.6/libvtkInfovis.a"; sourceTree = "<absolute>"; };
+		54F486CED0D70664D59B6B32 /* PlotComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlotComponent.h; sourceTree = "<group>"; };
+		5887B574DB682C2B784E9C38 /* vtkIO */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkIO; path = "/usr/local/lib/vtk-5.6/libvtkIO.a"; sourceTree = "<absolute>"; };
+		5CC2515312E70DF600072295 /* matvtk_guiserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = matvtk_guiserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F07F5C19F85DA1B2D375062 /* GuiServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GuiServer.cpp; sourceTree = "<group>"; };
+		60D585D01E5EF2BE2461B481 /* moc_SceneRegistry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_SceneRegistry.cpp; sourceTree = "<group>"; };
+		61A8E30AE442A00B15C54C3F /* DataPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataPort.h; sourceTree = "<group>"; };
+		62973168FD7823531570F9E9 /* vtkWidgets */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkWidgets; path = "/usr/local/lib/vtk-5.6/libvtkWidgets.a"; sourceTree = "<absolute>"; };
+		629F321402F6D442F42282A1 /* StringSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringSerializer.h; sourceTree = "<group>"; };
+		65590A5F850BCD55ABF46C1A /* VtkDataSerializer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VtkDataSerializer.cpp; sourceTree = "<group>"; };
+		6749AA91F2B009E31CF46DE5 /* StringSerializer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StringSerializer.cpp; sourceTree = "<group>"; };
+		69C19DA69CC7AA88B5973511 /* SceneWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneWindow.h; sourceTree = "<group>"; };
+		6A5DF432298FADD391644792 /* matvtkProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matvtkProtocol.h; sourceTree = "<group>"; };
+		6A971BC6374785A95C190BD2 /* SceneRegistry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneRegistry.cpp; sourceTree = "<group>"; };
+		7004830B620024217C2D3BC4 /* vtkexpat */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkexpat; path = "/usr/local/lib/vtk-5.6/libvtkexpat.a"; sourceTree = "<absolute>"; };
+		70EFD3FFBCA2B0D4241342AC /* MatvtkCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatvtkCommand.h; sourceTree = "<group>"; };
+		70F8065D64644B409219C74D /* CommandReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandReader.h; sourceTree = "<group>"; };
+		72126069D8FAFAEBCD12D980 /* vtkjpeg */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkjpeg; path = "/usr/local/lib/vtk-5.6/libvtkjpeg.a"; sourceTree = "<absolute>"; };
+		741AF2BBEDF9191F53E0F58A /* moc_GuiServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_GuiServer.cpp; sourceTree = "<group>"; };
+		749CC668EF63DB1ADF6F76D1 /* vtkRendering */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkRendering; path = "/usr/local/lib/vtk-5.6/libvtkRendering.a"; sourceTree = "<absolute>"; };
+		78BBF9A24FD59E56CA29089D /* SceneConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneConfiguration.h; sourceTree = "<group>"; };
+		7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /Library/Frameworks/QtCore.framework; sourceTree = "<absolute>"; };
+		7DD8F1D3DD2EF64503E9D96B /* vtkpng */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkpng; path = "/usr/local/lib/vtk-5.6/libvtkpng.a"; sourceTree = "<absolute>"; };
+		7E3EC0A507456AEB3DB2FB7C /* vtksys */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtksys; path = "/usr/local/lib/vtk-5.6/libvtksys.a"; sourceTree = "<absolute>"; };
+		82A322223737C776FF0219C2 /* ConfigurationValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigurationValue.h; sourceTree = "<group>"; };
+		840EDBDB5E4243660F5164DC /* json */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = json; path = "../json-c-0.9/libjson.a"; sourceTree = "<group>"; };
+		86417E5FF71B9057B535C863 /* vtkGenericFiltering */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkGenericFiltering; path = "/usr/local/lib/vtk-5.6/libvtkGenericFiltering.a"; sourceTree = "<absolute>"; };
+		87FD73B42E20FE706C9A9388 /* qrc_matvtk.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = qrc_matvtk.cpp; sourceTree = "<group>"; };
+		88B4FDB1D9C6CCCD684DD6BA /* StateDataPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateDataPort.h; sourceTree = "<group>"; };
+		8D0B306EC06072C9D259729C /* InteractiveCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractiveCommand.h; sourceTree = "<group>"; };
+		91315F95DC109E0586AA0ECB /* StringTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringTable.h; sourceTree = "<group>"; };
+		921C116AC006F6960886BCCF /* PlotCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PlotCommand.cpp; sourceTree = "<group>"; };
+		93D03B1CCD483C6A3335D282 /* MatvtkCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MatvtkCommand.cpp; sourceTree = "<group>"; };
+		94F6E07BD792FEAF76A78B81 /* vtkGraphics */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkGraphics; path = "/usr/local/lib/vtk-5.6/libvtkGraphics.a"; sourceTree = "<absolute>"; };
+		9618E7EB236835BAC5D673EF /* State.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		9B36DA7E32F0304E780E7972 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = /Library/Frameworks/QtGui.framework; sourceTree = "<absolute>"; };
+		9C56E1F3240A7B22576F645A /* DataSerializer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DataSerializer.cpp; sourceTree = "<group>"; };
+		9D986A476FCD9B6DF6343EB6 /* moc_InteractiveCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_InteractiveCommand.cpp; sourceTree = "<group>"; };
+		9DDF68624E3415BCE853F648 /* moc_MatvtkCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_MatvtkCommand.cpp; sourceTree = "<group>"; };
+		9F3FC1A10C7A77959379F7FD /* MatvtkCommandFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatvtkCommandFactory.h; sourceTree = "<group>"; };
+		A0A354118C24483980752674 /* vtkViews */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkViews; path = "/usr/local/lib/vtk-5.6/libvtkViews.a"; sourceTree = "<absolute>"; };
+		A1ACFFE18E2069EAA0B701FB /* PropertyEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyEntry.h; sourceTree = "<group>"; };
+		A38450B7EF482D9C7A1468A6 /* RegistryEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistryEntry.h; sourceTree = "<group>"; };
+		A3F864144B0F3544730BDD88 /* ConfigAdapter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigAdapter.cpp; sourceTree = "<group>"; };
+		B41DB44ED1FE16D3A80D5696 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		B4FFF982A4FF49858936E2AB /* matvtk.qrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = matvtk.qrc; sourceTree = "<group>"; };
+		B6B9970B86A6C219B0869FE9 /* QtNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtNetwork.framework; path = /Library/Frameworks/QtNetwork.framework; sourceTree = "<absolute>"; };
+		B8F07F14AC87FD2FC4865AB2 /* matvtk_guiserver.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = matvtk_guiserver.pro; sourceTree = "<group>"; };
+		C6766F86E49E9C8701C8E637 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		C764B909D73E398641E4A087 /* StateMachine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StateMachine.cpp; sourceTree = "<group>"; };
+		CB9F595A08521B6BF7761050 /* State.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = State.cpp; sourceTree = "<group>"; };
+		CD7724BBBF2B69ABB82FCE86 /* ArraySerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArraySerializer.h; sourceTree = "<group>"; };
+		D244C2917AD749133CAA2E65 /* vtkCharts */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkCharts; path = "/usr/local/lib/vtk-5.6/libvtkCharts.a"; sourceTree = "<absolute>"; };
+		D4C18DFE7C48302741D74066 /* ConnectionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectionHandler.h; sourceTree = "<group>"; };
+		D6749F4883A5F2C61EA02DF6 /* PlotComponent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PlotComponent.cpp; sourceTree = "<group>"; };
+		D80BB726C016EDB35AF0C708 /* MatvtkCommandFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MatvtkCommandFactory.cpp; sourceTree = "<group>"; };
+		DA18A6831232F53228631AD1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		E30553F1FBB3A43C6562041D /* ConfigDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigDialog.h; sourceTree = "<group>"; };
+		E3605A44AB16144AD2428503 /* SceneRegistry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneRegistry.h; sourceTree = "<group>"; };
+		E3D5A1DBD291A7B010EEE92F /* DataPort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DataPort.cpp; sourceTree = "<group>"; };
+		E642ED334C622F8771F9A8C1 /* vtkVolumeRendering */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkVolumeRendering; path = "/usr/local/lib/vtk-5.6/libvtkVolumeRendering.a"; sourceTree = "<absolute>"; };
+		E80B6B6558AE5A053C0C0569 /* moc_ConnectionHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_ConnectionHandler.cpp; sourceTree = "<group>"; };
+		EB89A80ECEB93291AD043414 /* StateMachine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateMachine.h; sourceTree = "<group>"; };
+		ED6E4AFA9B64371AEB6BB481 /* StringTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StringTable.cpp; sourceTree = "<group>"; };
+		EDE47913DFD753E74674F205 /* CommandReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CommandReader.cpp; sourceTree = "<group>"; };
+		EDE6F9B3ABE7069D23E03F35 /* vtkGeovis */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkGeovis; path = "/usr/local/lib/vtk-5.6/libvtkGeovis.a"; sourceTree = "<absolute>"; };
+		F1B880D45094CB93BC21223C /* DataSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataSerializer.h; sourceTree = "<group>"; };
+		F2866FFA7A5ECC198CD3FB37 /* ArraySerializer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArraySerializer.cpp; sourceTree = "<group>"; };
+		F7CDE4F4D6A9A0C11919CF2A /* QVTK */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = QVTK; path = "/usr/local/lib/vtk-5.6/libQVTK.a"; sourceTree = "<absolute>"; };
+		FA3677956C17767F5917971A /* CropCallback.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CropCallback.cpp; sourceTree = "<group>"; };
+		FB0B68BB66B5CB4EE8B7D611 /* vtkftgl */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkftgl; path = "/usr/local/lib/vtk-5.6/libvtkftgl.a"; sourceTree = "<absolute>"; };
+		FBE1EB27E4D4EA2AE7713E55 /* SceneWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneWindow.cpp; sourceTree = "<group>"; };
+		FC3255AB7C93A7FCDDFA7483 /* NetworkDataPort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkDataPort.cpp; sourceTree = "<group>"; };
+		FD363B6C43651919D253ECDE /* matvtkProtocol.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = matvtkProtocol.cpp; sourceTree = "<group>"; };
+		FD43984B7B4F49F632DD6282 /* StateDataPort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StateDataPort.cpp; sourceTree = "<group>"; };
+		FDA8E599FF0836732AABEB09 /* vtkCommon */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = vtkCommon; path = "/usr/local/lib/vtk-5.6/libvtkCommon.a"; sourceTree = "<absolute>"; };
+		FFFC3D86CB3A7B1DB05C0ADC /* moc_ConfigurationValue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_ConfigurationValue.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A1043669E6E5A7426EA502A /* Frameworks & Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77C663449ABEE93BEE5F2771 /* Cocoa.framework in Frameworks & Libraries */,
+				E8B9F0C58A5A7125FD5B79D3 /* IOKit.framework in Frameworks & Libraries */,
+				8F1797275F3B9291AADC377A /* json in Frameworks & Libraries */,
+				2F5465C1926FF89028244D21 /* vtkCharts in Frameworks & Libraries */,
+				C5A6A4F494F67D3D4CB0A29B /* QVTK in Frameworks & Libraries */,
+				581D6DD848CB3EB45D6E3080 /* vtkViews in Frameworks & Libraries */,
+				17EB440F1F98E9002175F465 /* vtkGeovis in Frameworks & Libraries */,
+				05E81B6DF781B855CD8BB563 /* vtkInfovis in Frameworks & Libraries */,
+				C974A535216E2D0D554C8B34 /* vtkWidgets in Frameworks & Libraries */,
+				4E9B158973176716A3F0E0D9 /* vtkHybrid in Frameworks & Libraries */,
+				E6F45831CEBC8170868CF2D9 /* vtkVolumeRendering in Frameworks & Libraries */,
+				F5A8132408C87D0851B2D0B5 /* vtkRendering in Frameworks & Libraries */,
+				F6B82C1F85E6C6601470DC72 /* vtkImaging in Frameworks & Libraries */,
+				02BDFC0A80A42032353E0FA3 /* vtkGenericFiltering in Frameworks & Libraries */,
+				50F56B8D6F254F720855DF1A /* vtkGraphics in Frameworks & Libraries */,
+				3C91541A9309FFDA97952FDB /* vtkFiltering in Frameworks & Libraries */,
+				FC9CD8B21D05C2613A2723AC /* vtkIO in Frameworks & Libraries */,
+				85FDBC82648782548EA36A7F /* vtkCommon in Frameworks & Libraries */,
+				C5C5ABF2ED84F016816BF3C7 /* vtkftgl in Frameworks & Libraries */,
+				E64DC9769E26F1FFDD319F04 /* vtksys in Frameworks & Libraries */,
+				93A676CF90D9D3D90C6DB75D /* vtktiff in Frameworks & Libraries */,
+				22B8CDFB4D1E6DFD5BF2B12A /* vtkjpeg in Frameworks & Libraries */,
+				727B12EC083885099325A0AC /* vtkpng in Frameworks & Libraries */,
+				A313854483C5790477A9235B /* vtklibxml2 in Frameworks & Libraries */,
+				6EA00F6743D0C73E4BF6D29A /* vtkexpat in Frameworks & Libraries */,
+				56254E36346E088624B36FA6 /* vtkzlib in Frameworks & Libraries */,
+				92D0283DFA9507530DA4472C /* vtkfreetype in Frameworks & Libraries */,
+				BCEF71E1EDFB18DA77DC750B /* OpenGL.framework in Frameworks & Libraries */,
+				0C6D4628EE0B0D1479A20551 /* AGL.framework in Frameworks & Libraries */,
+				501667F26B3C1FF6767A7C12 /* QtGui.framework in Frameworks & Libraries */,
+				3826A0833FCB54E86728C6EF /* QtNetwork.framework in Frameworks & Libraries */,
+				069D05B0128AE5DC7EE31738 /* QtCore.framework in Frameworks & Libraries */,
+			);
+			name = "Frameworks & Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05596AB53D8D521C69802C27 /* matvtk_guiserver */ = {
+			isa = PBXGroup;
+			children = (
+				FB61758D0F0FDA4BA867C3D5 /* Sources */,
+				46E892BBB6BB6952967E0561 /* Temporary Sources */,
+				883D7615C4D2DE3FA1218F12 /* Headers */,
+				7CABE3C80E79AD2B307756D2 /* Sources [qmake] */,
+				52C235EBF1C9B07808119459 /* Sources [RCC] */,
+				ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */,
+				5CC2515412E70DF600072295 /* Products */,
+			);
+			name = matvtk_guiserver;
+			sourceTree = "<group>";
+		};
+		46E892BBB6BB6952967E0561 /* Temporary Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2309E3CC26ED1138EC3538EC /* moc_SceneWindow.cpp */,
+				3764DD46D387C372ECC67C05 /* moc_PlotComponent.cpp */,
+				741AF2BBEDF9191F53E0F58A /* moc_GuiServer.cpp */,
+				60D585D01E5EF2BE2461B481 /* moc_SceneRegistry.cpp */,
+				E80B6B6558AE5A053C0C0569 /* moc_ConnectionHandler.cpp */,
+				9DDF68624E3415BCE853F648 /* moc_MatvtkCommand.cpp */,
+				51EF995B0919A50F33C6FC04 /* moc_SpecialCommand.cpp */,
+				9D986A476FCD9B6DF6343EB6 /* moc_InteractiveCommand.cpp */,
+				4CBD3F5B68E3EF30FB8AAFE4 /* moc_ConfigDialog.cpp */,
+				FFFC3D86CB3A7B1DB05C0ADC /* moc_ConfigurationValue.cpp */,
+				87FD73B42E20FE706C9A9388 /* qrc_matvtk.cpp */,
+			);
+			name = "Temporary Sources";
+			sourceTree = "<group>";
+		};
+		52C235EBF1C9B07808119459 /* Sources [RCC] */ = {
+			isa = PBXGroup;
+			children = (
+				B4FFF982A4FF49858936E2AB /* matvtk.qrc */,
+			);
+			name = "Sources [RCC]";
+			sourceTree = "<group>";
+		};
+		5CC2515412E70DF600072295 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CC2515312E70DF600072295 /* matvtk_guiserver.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CABE3C80E79AD2B307756D2 /* Sources [qmake] */ = {
+			isa = PBXGroup;
+			children = (
+				B8F07F14AC87FD2FC4865AB2 /* matvtk_guiserver.pro */,
+			);
+			name = "Sources [qmake]";
+			sourceTree = "<group>";
+		};
+		883D7615C4D2DE3FA1218F12 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				24CFBEA13944697BA0C09B4E /* Constants.h */,
+				6A5DF432298FADD391644792 /* matvtkProtocol.h */,
+				69C19DA69CC7AA88B5973511 /* SceneWindow.h */,
+				54F486CED0D70664D59B6B32 /* PlotComponent.h */,
+				2198A5BA978562BF5D90D60E /* GuiServer.h */,
+				E3605A44AB16144AD2428503 /* SceneRegistry.h */,
+				A38450B7EF482D9C7A1468A6 /* RegistryEntry.h */,
+				D4C18DFE7C48302741D74066 /* ConnectionHandler.h */,
+				70F8065D64644B409219C74D /* CommandReader.h */,
+				61A8E30AE442A00B15C54C3F /* DataPort.h */,
+				2B4A9935830B0B51B0247ACC /* NetworkDataPort.h */,
+				F1B880D45094CB93BC21223C /* DataSerializer.h */,
+				CD7724BBBF2B69ABB82FCE86 /* ArraySerializer.h */,
+				3854B472D4C121ED0831778B /* VtkDataSerializer.h */,
+				629F321402F6D442F42282A1 /* StringSerializer.h */,
+				EB89A80ECEB93291AD043414 /* StateMachine.h */,
+				9618E7EB236835BAC5D673EF /* State.h */,
+				88B4FDB1D9C6CCCD684DD6BA /* StateDataPort.h */,
+				70EFD3FFBCA2B0D4241342AC /* MatvtkCommand.h */,
+				24C88AA5EA96ED577D5B4516 /* PlotCommand.h */,
+				3DB73F95043DAC0D8CBD845C /* SpecialCommand.h */,
+				8D0B306EC06072C9D259729C /* InteractiveCommand.h */,
+				9F3FC1A10C7A77959379F7FD /* MatvtkCommandFactory.h */,
+				78BBF9A24FD59E56CA29089D /* SceneConfiguration.h */,
+				91315F95DC109E0586AA0ECB /* StringTable.h */,
+				A1ACFFE18E2069EAA0B701FB /* PropertyEntry.h */,
+				E30553F1FBB3A43C6562041D /* ConfigDialog.h */,
+				3F64D487908933BCE0AC333B /* ConfigAdapter.h */,
+				82A322223737C776FF0219C2 /* ConfigurationValue.h */,
+				3DA62B5C1BC6E4E8DAE8B622 /* CropCallback.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				336CB11D929F5E35FA69020F /* Cocoa.framework */,
+				B41DB44ED1FE16D3A80D5696 /* IOKit.framework */,
+				840EDBDB5E4243660F5164DC /* json */,
+				D244C2917AD749133CAA2E65 /* vtkCharts */,
+				F7CDE4F4D6A9A0C11919CF2A /* QVTK */,
+				A0A354118C24483980752674 /* vtkViews */,
+				EDE6F9B3ABE7069D23E03F35 /* vtkGeovis */,
+				52A8271A01E1420BE455C176 /* vtkInfovis */,
+				62973168FD7823531570F9E9 /* vtkWidgets */,
+				4380C4C9EF433EF95D0B8E25 /* vtkHybrid */,
+				E642ED334C622F8771F9A8C1 /* vtkVolumeRendering */,
+				749CC668EF63DB1ADF6F76D1 /* vtkRendering */,
+				1E55A5C4AB5A824AA581ED45 /* vtkImaging */,
+				86417E5FF71B9057B535C863 /* vtkGenericFiltering */,
+				94F6E07BD792FEAF76A78B81 /* vtkGraphics */,
+				2E019EEFFBE38ADAE7BBA6AA /* vtkFiltering */,
+				5887B574DB682C2B784E9C38 /* vtkIO */,
+				FDA8E599FF0836732AABEB09 /* vtkCommon */,
+				FB0B68BB66B5CB4EE8B7D611 /* vtkftgl */,
+				7E3EC0A507456AEB3DB2FB7C /* vtksys */,
+				463A62D0E80642110E551927 /* vtktiff */,
+				72126069D8FAFAEBCD12D980 /* vtkjpeg */,
+				7DD8F1D3DD2EF64503E9D96B /* vtkpng */,
+				2D3F352717EED3D4015346D1 /* vtklibxml2 */,
+				7004830B620024217C2D3BC4 /* vtkexpat */,
+				16D47E16959C340DE85A66E6 /* vtkzlib */,
+				2BC8E084C0B9FC53D526CA85 /* vtkfreetype */,
+				DA18A6831232F53228631AD1 /* OpenGL.framework */,
+				C6766F86E49E9C8701C8E637 /* AGL.framework */,
+				9B36DA7E32F0304E780E7972 /* QtGui.framework */,
+				B6B9970B86A6C219B0869FE9 /* QtNetwork.framework */,
+				7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		FB61758D0F0FDA4BA867C3D5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				118FCBAABA162BA17933C789 /* main.cpp */,
+				FD363B6C43651919D253ECDE /* matvtkProtocol.cpp */,
+				FBE1EB27E4D4EA2AE7713E55 /* SceneWindow.cpp */,
+				D6749F4883A5F2C61EA02DF6 /* PlotComponent.cpp */,
+				5F07F5C19F85DA1B2D375062 /* GuiServer.cpp */,
+				6A971BC6374785A95C190BD2 /* SceneRegistry.cpp */,
+				51AD7C87BC0587A53559885C /* RegistryEntry.cpp */,
+				4F834CF8B4DF1290D8C9CE35 /* ConnectionHandler.cpp */,
+				EDE47913DFD753E74674F205 /* CommandReader.cpp */,
+				E3D5A1DBD291A7B010EEE92F /* DataPort.cpp */,
+				FC3255AB7C93A7FCDDFA7483 /* NetworkDataPort.cpp */,
+				9C56E1F3240A7B22576F645A /* DataSerializer.cpp */,
+				F2866FFA7A5ECC198CD3FB37 /* ArraySerializer.cpp */,
+				65590A5F850BCD55ABF46C1A /* VtkDataSerializer.cpp */,
+				6749AA91F2B009E31CF46DE5 /* StringSerializer.cpp */,
+				C764B909D73E398641E4A087 /* StateMachine.cpp */,
+				CB9F595A08521B6BF7761050 /* State.cpp */,
+				FD43984B7B4F49F632DD6282 /* StateDataPort.cpp */,
+				93D03B1CCD483C6A3335D282 /* MatvtkCommand.cpp */,
+				921C116AC006F6960886BCCF /* PlotCommand.cpp */,
+				2D613B01D320A18747F7892F /* SpecialCommand.cpp */,
+				3628E4F77BC8CB6B59E866B0 /* InteractiveCommand.cpp */,
+				D80BB726C016EDB35AF0C708 /* MatvtkCommandFactory.cpp */,
+				0EFB8234F8855581869D04A4 /* SceneConfiguration.cpp */,
+				ED6E4AFA9B64371AEB6BB481 /* StringTable.cpp */,
+				46326E6B7275CAFA383022FB /* PropertyEntry.cpp */,
+				0EF897030BD31346B4A501A5 /* ConfigDialog.cpp */,
+				A3F864144B0F3544730BDD88 /* ConfigAdapter.cpp */,
+				4500E1378AE6AA50AAD3EFDA /* ConfigurationValue.cpp */,
+				FA3677956C17767F5917971A /* CropCallback.cpp */,
+				215905D27DB9D5EC4E6AB0D1 /* matvtk.icns */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42C4B276E17D6BFD7453A883 /* matvtk_guiserver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CC2516812E70DF800072295 /* Build configuration list for PBXNativeTarget "matvtk_guiserver" */;
+			buildPhases = (
+				D7BA7D76DAB5DD13389D6332 /* Qt Qmake */,
+				A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */,
+				F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */,
+				C29B8785722055ED95EF7B57 /* Build Sources */,
+				2A1043669E6E5A7426EA502A /* Frameworks & Libraries */,
+				3787F99312C85FF0073FD7BA /* Bundle Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = matvtk_guiserver;
+			productName = matvtk_guiserver;
+			productReference = 5CC2515312E70DF600072295 /* matvtk_guiserver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91B15E841AA80083484172DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "matvtk_guiserver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 05596AB53D8D521C69802C27 /* matvtk_guiserver */;
+			productRefGroup = 5CC2515412E70DF600072295 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42C4B276E17D6BFD7453A883 /* matvtk_guiserver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3787F99312C85FF0073FD7BA /* Bundle Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B3863E72F8773655530E374 /* matvtk.icns in Bundle Resources */,
+			);
+			name = "Bundle Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Preprocessors";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/ebirn/Documents/projects/ikuchi/guiServer -f 'matvtk_guiserver.xcodeproj/qt_preprocess.mak'";
+		};
+		D7BA7D76DAB5DD13389D6332 /* Qt Qmake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Qmake";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/ebirn/Documents/projects/ikuchi/guiServer -f 'matvtk_guiserver.xcodeproj/qt_makeqmake.mak'";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C29B8785722055ED95EF7B57 /* Build Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B093CA6F071B023A473CED0 /* main.cpp in Build Sources */,
+				DE3EAAF0088A4BFD54B3EAEB /* matvtkProtocol.cpp in Build Sources */,
+				745B2036A4007E1243A3EBBB /* SceneWindow.cpp in Build Sources */,
+				528AA8DA7DD15DDDFF497FF5 /* PlotComponent.cpp in Build Sources */,
+				4A3BAB31F07F6E0A92613E9E /* GuiServer.cpp in Build Sources */,
+				2E56060892B6BE8BBEF549AF /* SceneRegistry.cpp in Build Sources */,
+				5F6A5860F93B01CCC7F1D48A /* RegistryEntry.cpp in Build Sources */,
+				6B463AE8A62CFBB43E6B93B2 /* ConnectionHandler.cpp in Build Sources */,
+				22D757D803869DFA8ED348BC /* CommandReader.cpp in Build Sources */,
+				C8007C21322514F41B679C25 /* DataPort.cpp in Build Sources */,
+				FA94544FC0627932852025EB /* NetworkDataPort.cpp in Build Sources */,
+				6C536010EEB4624BF26CF081 /* DataSerializer.cpp in Build Sources */,
+				4D63FB973676B0550B4A66A1 /* ArraySerializer.cpp in Build Sources */,
+				A8C61295597F5704A3FF061F /* VtkDataSerializer.cpp in Build Sources */,
+				6E7DF97B49CD5D1C5F1DC312 /* StringSerializer.cpp in Build Sources */,
+				751F98E3A03FDB39D47E9CB4 /* StateMachine.cpp in Build Sources */,
+				A1991339E08E7EBA8E8C5B16 /* State.cpp in Build Sources */,
+				7B752572FF37EA6163D9F35E /* StateDataPort.cpp in Build Sources */,
+				6759E1918F23B3CE1D39E345 /* MatvtkCommand.cpp in Build Sources */,
+				A67160AB5D13EC000B026397 /* PlotCommand.cpp in Build Sources */,
+				5EC177C46F46BA99B9F8B505 /* SpecialCommand.cpp in Build Sources */,
+				0F517CA915F6FB55D03C5FA9 /* InteractiveCommand.cpp in Build Sources */,
+				EE6D60402D285759DB866CF4 /* MatvtkCommandFactory.cpp in Build Sources */,
+				D486344367CEDB3309090EBD /* SceneConfiguration.cpp in Build Sources */,
+				E39C185FB51B0C2060C34C26 /* StringTable.cpp in Build Sources */,
+				35E3C5B4668E2FCE24F3DCC3 /* PropertyEntry.cpp in Build Sources */,
+				979E471CFE62023BF23BAE94 /* ConfigDialog.cpp in Build Sources */,
+				A79A555FA0CABAA9B5DC071D /* ConfigAdapter.cpp in Build Sources */,
+				BFAB58CF3F255BA3C65330C6 /* ConfigurationValue.cpp in Build Sources */,
+				4DB8B0721DB0608F8A21C695 /* CropCallback.cpp in Build Sources */,
+				43C9DF745227168B45F85A51 /* moc_SceneWindow.cpp in Build Sources */,
+				6D57D68E4A46016A2A6ED7D4 /* moc_PlotComponent.cpp in Build Sources */,
+				4D1DDC4A1875F09EA9CDF8F6 /* moc_GuiServer.cpp in Build Sources */,
+				9D024A5BEB3F247985DF87F9 /* moc_SceneRegistry.cpp in Build Sources */,
+				E64E3F6EC492C17C94091B6C /* moc_ConnectionHandler.cpp in Build Sources */,
+				6B9DF1E5C6F361BC383BB64F /* moc_MatvtkCommand.cpp in Build Sources */,
+				98DEDAB3868F7BD132C09399 /* moc_SpecialCommand.cpp in Build Sources */,
+				4136482B2B69BA946160CEFA /* moc_InteractiveCommand.cpp in Build Sources */,
+				0C57673A7A49D74B8D33B419 /* moc_ConfigDialog.cpp in Build Sources */,
+				2507A5918F2A2A45B2E405C9 /* moc_ConfigurationValue.cpp in Build Sources */,
+				A05586CFAC65F72B58CFD360 /* qrc_matvtk.cpp in Build Sources */,
+			);
+			name = "Build Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5CC2515A12E70DF700072295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				BUILD_ROOT = /Users/ebirn/Documents/projects/ikuchi/guiServer;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1.0beta2;
+				DYLIB_CURRENT_VERSION = 1.0beta2.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtNetwork.framework/Versions/4/Headers,
+					/usr/include/QtNetwork,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/usr/include,
+					"/usr/local/include/vtk-5.6",
+					/usr/include/json,
+					..,
+					/usr/include/qt4/,
+					"../json-c-0.9",
+					.,
+					/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers,
+					/System/Library/Frameworks/AGL.framework/Headers,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.7/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"/usr/local/lib/vtk-5.6",
+					/System/Library/Frameworks/,
+					"../json-c-0.9/",
+					"/Users/ebirn/Documents/projects/ikuchi/json-c-0.9/",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"$(OTHER_CFLAGS_QUOTED_FOR_TARGET_1)",
+					"-DQT",
+					"-DDEBUG",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CFLAGS_QUOTED_FOR_TARGET_1 = "-DMATVTK_VERSION=\\\"1.0beta2\\\"";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"$(OTHER_CPLUSPLUSFLAGS_QUOTED_FOR_TARGET_1)",
+					"-DQT",
+					"-DDEBUG",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS_QUOTED_FOR_TARGET_1 = "-DMATVTK_VERSION=\\\"1.0beta2\\\"";
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+					"-L/usr/local/lib/vtk-5.6",
+					"-L../json-c-0.9/",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = matvtk_guiserver;
+				SDKROOT = "";
+				SECTORDER_FLAGS = "";
+				VALID_ARCHS = "i386 x86_64";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Debug;
+		};
+		5CC2515B12E70DF700072295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				BUILD_ROOT = /Users/ebirn/Documents/projects/ikuchi/guiServer;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1.0beta2;
+				DYLIB_CURRENT_VERSION = 1.0beta2.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtNetwork.framework/Versions/4/Headers,
+					/usr/include/QtNetwork,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/usr/include,
+					"/usr/local/include/vtk-5.6",
+					/usr/include/json,
+					..,
+					/usr/include/qt4/,
+					"../json-c-0.9",
+					.,
+					/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers,
+					/System/Library/Frameworks/AGL.framework/Headers,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.7/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"/usr/local/lib/vtk-5.6",
+					/System/Library/Frameworks/,
+					"../json-c-0.9/",
+					"/Users/ebirn/Documents/projects/ikuchi/json-c-0.9/",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"$(OTHER_CFLAGS_QUOTED_FOR_TARGET_1)",
+					"-DQT",
+					"-DDEBUG",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CFLAGS_QUOTED_FOR_TARGET_1 = "-DMATVTK_VERSION=\\\"1.0beta2\\\"";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"$(OTHER_CPLUSPLUSFLAGS_QUOTED_FOR_TARGET_1)",
+					"-DQT",
+					"-DDEBUG",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS_QUOTED_FOR_TARGET_1 = "-DMATVTK_VERSION=\\\"1.0beta2\\\"";
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+					"-L/usr/local/lib/vtk-5.6",
+					"-L../json-c-0.9/",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = matvtk_guiserver;
+				SDKROOT = "";
+				SECTORDER_FLAGS = "";
+				VALID_ARCHS = "i386 x86_64";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Release;
+		};
+		5CC2515C12E70DF700072295 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				BUILD_ROOT = /Users/ebirn/Documents/projects/ikuchi/guiServer;
+				DYLIB_COMPATIBILITY_VERSION = 1.0beta2;
+				DYLIB_CURRENT_VERSION = 1.0beta2.0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtNetwork.framework/Versions/4/Headers,
+					/usr/include/QtNetwork,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/usr/include,
+					"/usr/local/include/vtk-5.6",
+					/usr/include/json,
+					..,
+					/usr/include/qt4/,
+					"../json-c-0.9",
+					.,
+					/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers,
+					/System/Library/Frameworks/AGL.framework/Headers,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.7/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"/usr/local/lib/vtk-5.6",
+					/System/Library/Frameworks/,
+					"../json-c-0.9/",
+					"/Users/ebirn/Documents/projects/ikuchi/json-c-0.9/",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"$(OTHER_CFLAGS_QUOTED_FOR_TARGET_1)",
+					"-DQT",
+					"-DDEBUG",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CFLAGS_QUOTED_FOR_TARGET_1 = "-DMATVTK_VERSION=\\\"1.0beta2\\\"";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"$(OTHER_CPLUSPLUSFLAGS_QUOTED_FOR_TARGET_1)",
+					"-DQT",
+					"-DDEBUG",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS_QUOTED_FOR_TARGET_1 = "-DMATVTK_VERSION=\\\"1.0beta2\\\"";
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+					"-L/usr/local/lib/vtk-5.6",
+					"-L../json-c-0.9/",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = matvtk_guiserver;
+				SDKROOT = "";
+				SECTORDER_FLAGS = "";
+				VALID_ARCHS = "i386 x86_64";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Default;
+		};
+		8DB1DD96F65B1BF1FFC506E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = "";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		95E1EB2E5DDD587BE5B3E548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_VERSION = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = "";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "matvtk_guiserver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB1DD96F65B1BF1FFC506E0 /* Debug */,
+				95E1EB2E5DDD587BE5B3E548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CC2516812E70DF800072295 /* Build configuration list for PBXNativeTarget "matvtk_guiserver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CC2515A12E70DF700072295 /* Debug */,
+				5CC2515B12E70DF700072295 /* Release */,
+				5CC2515C12E70DF700072295 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91B15E841AA80083484172DE /* Project object */;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesStackState
+   version = "1.0">
+   <StackStates>
+      <StackState
+         stackFrameDescription = "ConfigDialog::reject():ConfigDialog.cpp">
+         <expressions>
+         </expressions>
+      </StackState>
+      <StackState
+         stackFrameDescription = "ConfigDialog::buildConfig(ConfigAdapterBase*):ConfigDialog.cpp">
+         <expressions>
+         </expressions>
+      </StackState>
+   </StackStates>
+</VariablesStackState>

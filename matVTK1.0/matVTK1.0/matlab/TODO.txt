@@ -1,0 +1,8 @@
+gcvtk: check if gcvtk(AHANDLE) sets current handle
+
+fix: references to Documentation about "Configuratin" and "Standard Types"
+fix: explain/use WINHANDLE for window/scene handles - DATAHANDLE for plot/data handles
+
+
+docs next: vtkplotlines.cpp
+

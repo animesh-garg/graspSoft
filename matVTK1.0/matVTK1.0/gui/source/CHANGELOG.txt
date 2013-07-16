@@ -1,0 +1,28 @@
+2011-02-09: matVTK Beta 3
+Binaries for MacOS, Linux (for Windows please use the Beta 1 package)
+
+Changes:
+ - improved stability
+ - new configuration gui (see menu 'window')
+
+
+
+2011-01-11: matVTK Beta 2
+Binaries for MacOS, Linux (for Windows please use the Beta 1 package)
+
+Changes:
+ - various Bugfixes
+ - new command: vtkconfig
+     used to set config parameters. examples:
+       config = vtkconfig('backgroundColor', [1 1 1]) % set a white background
+       config = vtkconfig(PLOTHANDLE, 'color', [1 0 0]) % set color plot elements with handle PLOTHANDLE to red
+
+       returns: a struct containig all valid config parameters
+
+       using no PLOTHANDLE only allows to set global parameters (like background color, camera settings).
+       when provided a handle as first parameter it allows to set parameters specific to the given plot type
+       as well as global parameters.
+
+       please refer to the original documentation for parameter names.
+
+

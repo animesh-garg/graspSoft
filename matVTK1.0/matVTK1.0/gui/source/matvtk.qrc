@@ -1,0 +1,10 @@
+<!DOCTYPE RCC>
+<RCC version="1.0"> 
+<qresource>
+     <file>matvtklogo.png</file>
+	 <file>matvtk.icns</file>
+ </qresource>
+
+
+</RCC>
+
