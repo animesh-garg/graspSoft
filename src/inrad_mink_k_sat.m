@@ -1,4 +1,6 @@
 function [r,inds_p] = inrad_mink_k_sat(x_np,K,c_p,t_kp)
+
+
 [N,~] = size(x_np);
 
 dots_nk = x_np * t_kp';

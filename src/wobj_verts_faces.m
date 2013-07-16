@@ -1,4 +1,6 @@
 function [verts_v3, faces_f3,normals_f3] = wobj_verts_faces(wobj)
+%Read vertices, faces and normals from a wobj object
+
 verts_v3 = wobj.vertices(:,1:3);
 faces_f3 = zeros(0,3);
 norm_f3 = zeros(0,3);
@@ -9,6 +11,8 @@ for obj = wobj.objects
     end
 end
 
+%Calculate normals for each face a average 
+%of three vertex normals
 vnormals = wobj.vertices_normal;
 normals_f3 = normr(...
     vnormals(norm_f3(:,1),:)+...

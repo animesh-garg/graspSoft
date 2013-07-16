@@ -15,7 +15,5 @@ else
 end
 
 
-
-
 torques_f3 = cross(rads_f3, forces_f3);
 wrenches_f6 = [forces_f3,torques_f3];

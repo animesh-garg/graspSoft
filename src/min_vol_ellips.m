@@ -1,6 +1,9 @@
 function [A_pp,b_p] = min_vol_ellips(x_pn)
 x_pn = hullpts(x_pn')';
-[P,N] = size(x_pn)
+[P,N] = size(x_pn);
+
+%This is where optimization is being solved. 
+% Can be replaced by a faster CPLEX or mexed function call
 cvx_begin
     variable A_pp(P,P)
     variable b_p(P)
