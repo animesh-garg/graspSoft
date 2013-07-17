@@ -42,18 +42,18 @@ Also it is worth noting that noise wrenches would still be sampled uniformly fro
 
 \subsection{Create a 3D Model for Custom Fixture}
 \todo{tentative ideas}
-The resultant set of contact points $S_0$ chosen from the candidate set generated 
+The resultant set of contact points $S_{opt}$ chosen from the candidate set generated 
 from section~\ref{subSec:genContacts} would result in points being located far away. This is because each vertex is weighted inversely to number of vertices in its neighborhood.
 
-Hence the final subset $S_0$, would be sparsely located on the surface of the mesh. We propose the following method to construct a complete 3D model:
+Hence the final subset $S_{opt}$, would be sparsely located on the surface of the mesh. We propose the following method to construct a complete 3D model:
 \begin{enumerate}
-\item For every local triplet of points in $S_0$, find geodesic distance between all three pairs. 
+\item For every local triplet of points in $S_{opt}$, find geodesic distance between all three pairs. 
 \item Locality can be established by all pairs geodesic distance. \todo{find a better way if exists}
 \item Connect the triplets along geodesics to create a surface on the mesh surface. 
 \item Invert the normals for this surface, and then add it to the list of objects in 3D fixture. 
-\item Repeat for all such neighboring triplets in $S_0$.
+\item Repeat for all such neighboring triplets in $S_{opt}$.
 \item Finally combine all elements in list of objects in 3D fixture into a single mesh. 
 \end{enumerate}
 
 The final mesh would conform to the surface. 
-\todo{Conjecture:}Since each point in the set $S_0$ was chosen to be minimize maximum contact wrench. Hence distributing the same load (force-torque pair) in the area contact, compared to three neighboring points only, would only reduce the maximum contact wrench. Hence the new solution is better than the one with only point contact.
+\todo{Conjecture:}Since each point in the set $S_{opt}$ was chosen to be minimize maximum contact wrench. Hence distributing the same load (force-torque pair) in the area contact, compared to three neighboring points only, would only reduce the maximum contact wrench. Hence the new solution is better than the one with only point contact.
