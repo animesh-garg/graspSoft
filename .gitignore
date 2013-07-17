@@ -12,4 +12,9 @@ pip-log.txt
 nosetests.xml
 
 
+# non essential dependencies files
+matVTK1.0/matVTK1.0/gui/linux32/
+matVTK1.0/
 
+#removing the pdf file from the repo
+paper/*.pdf
