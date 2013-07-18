@@ -21,3 +21,5 @@ paper/*.pdf
 
 #removing 
 paper/updates-to-Ken/
+
+paper/.DS_Store
